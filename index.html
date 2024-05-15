@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Aan Widianto</title>
-    <link rel="stylesheet" href="src/css/final-style.css" />
+    <link rel="stylesheet" href="src/css/output.css" />
   </head>
 
   <body>
@@ -31,16 +31,45 @@
                   <a href="#home" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white group-visited:text-white">About Me</a>
+                  <a href="#about" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">About Me</a>
                 </li>
                 <li class="group">
-                  <a href="#services" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">My Services</a>
-                </li>
-                <li class="group">
-                  <a href="#skill" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">My Skill</a>
-                </li>
-                <li class="group">
-                  <a href="#portfolio" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">My Portfolio</a>
+                  <div class="relative">
+                    <button id="dropBtn" class="text-xl text-dark py-2 ml-6 mr-2 flex group-hover:text-white">
+                      Experience
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-chevron-down self-center mx-2"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+
+                    <div id="dropMenu" class="lg:absolute lg:mt-6 bg-thrid rounded-md mx-2 py-2 lg:bg-primary hidden lg:w-44">
+                      <ul>
+                        <li class="group">
+                          <a href="#journey" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Journey</a>
+                        </li>
+                        <li class="group">
+                          <a href="#services" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Services</a>
+                        </li>
+                        <li class="group">
+                          <a href="#skill" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Skill</a>
+                        </li>
+                        <li class="group">
+                          <a href="#portfolio" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Portfolio</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
                 <li class="group">
                   <a href="#contact" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">Contact</a>
@@ -54,7 +83,7 @@
     <!-- Header end -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-32 flex lg:h-screen lg:items-center">
+    <section id="home" class="pt-32 pb-32 flex lg:h-screen lg:items-center">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -87,7 +116,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-32 pb-32">
+    <section id="about" class="pt-32 pb-32 bg-slate-100">
       <div class="container">
         <div class="flex flex-wrap">
           <h2 class="w-full font-bold text-dark text-3xl mb-6 lg:text-4xl text-center">About <span class="text-primary">Me</span></h2>
@@ -148,6 +177,152 @@
       </div>
     </section>
     <!-- About Section End -->
+
+    <!-- My Journey Start -->
+    <section id="journey" class="pt-32 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-6">
+            <h2 class="w-full font-bold text-dark text-3xl mb-6 lg:text-4xl text-center">My <span class="text-primary">Journey</span></h2>
+            <p class="font-medium text-md text-secondry md:text-lg">Berikut ini merupakan riwayat pendidikan dan perkerjaan saya.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="flex flex-col md:grid grid-cols-9 mx-auto px-4 text-thrid">
+              <!-- Kiri -->
+              <div class="flex flex-row-reverse md:contents">
+                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                  <p>14 Februari 2000</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">Lahir</h3>
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+                  <div class="h-full w-4 flex items-end justify-center">
+                    <div class="h-1/2 w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+              </div>
+              <!-- kanan -->
+              <div class="flex md:contents">
+                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
+                  <div class="h-full w-4 flex items-center justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                  <p>2006 - 2007</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">TK PGRI Jatimulyo</h3>
+                </div>
+              </div>
+              <!-- kiri -->
+              <div class="flex flex-row-reverse md:contents">
+                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                  <p>2007 - 2012</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">SD N 2 Jonggrangan</h3>
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+                  <div class="h-full w-4 flex items-end justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+              </div>
+              <!-- kanan -->
+              <div class="flex md:contents">
+                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
+                  <div class="h-full w-4 flex items-center justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                  <p>2013 - 2015</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">SMP N 3 Pengasih</h3>
+                </div>
+              </div>
+              <!-- kiri -->
+              <div class="flex flex-row-reverse md:contents">
+                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                  <p>2016 - 2018</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">SMK N 2 Pengasih</h3>
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+                  <div class="h-full w-4 flex items-end justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="flex flex-col md:grid grid-cols-9 mx-auto px-4 text-thrid">
+              <!-- kiri -->
+              <div class="flex flex-row-reverse md:contents">
+                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                  <p>2018 - 2020</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">PT Denso Indonesia</h3>
+                  <p class="text-sm md:text-base italic">Karyawan : Operator Produksi</p>
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+                  <div class="h-full w-4 flex items-center justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+              </div>
+              <!-- kanan -->
+              <div class="flex md:contents">
+                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
+                  <div class="h-full w-4 flex items-center justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                  <p>2021 - 2022</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">PT Denso Indonesia</h3>
+                  <p class="text-sm md:text-base italic">Karyawan : Operator Produksi</p>
+                </div>
+              </div>
+              <!-- kiri -->
+              <div class="flex flex-row-reverse md:contents">
+                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                  <p>2022 - Sekarang</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">Sukses Mandiri Al-Ka</h3>
+                  <p class="text-sm md:text-base italic">Karyawan : Tukang</p>
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+                  <div class="h-full w-4 flex items-end justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+              </div>
+              <!-- kanan -->
+              <div class="flex md:contents">
+                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
+                  <div class="h-full w-4 flex items-center justify-center">
+                    <div class="h-full w-1 bg-dark"></div>
+                  </div>
+                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                </div>
+                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                  <p>2022 - Sekarang</p>
+                  <h3 class="font-semibold text-md md:text-lg mt-1">UMBY</h3>
+                  <p class="text-sm md:text-base italic">Mahasiswa Kelas Karyawan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Journey End -->
 
     <!-- My Services Section Start -->
     <section id="services" class="pt-32 pb-32 bg-slate-100">
@@ -382,14 +557,14 @@
     <footer class="bg-dark pt-24 pb-12">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
             <h2 class="font-bold text-3xl text-thrid mb-5 italic"><span class="text-primary">Aan</span> Widianto</h2>
             <h3 class="font-bold text-xl mb-2">Hubungi Saya</h3>
             <p>aanwidianto01@gmail.com</p>
             <p>Talunombo, Sidomulyo, Pengasih, Kulon Progo</p>
             <p>Yogyakarta</p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
+          <div class="w-full px-4 mb-10 md:w-1/3">
             <h3 class="font-semibold text-xl text-thrid mb-5">Ikuti Saya</h3>
             <div class="flex items-center mb-5 text-slate-300">
               <!-- Github  -->
@@ -432,7 +607,7 @@
               ></a>
             </div>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
+          <div class="w-full px-4 mb-10 md:w-1/3">
             <h3 class="font-semibold text-xl text-thrid mb-5">Tautan Menu</h3>
             <ul class="text-slate-300">
               <li>
@@ -440,6 +615,9 @@
               </li>
               <li>
                 <a href="#about" class="inline-block text-base hover:text-primary mb-3">About Me</a>
+              </li>
+              <li>
+                <a href="#journey" class="inline-block text-base hover:text-primary mb-3">My Journey</a>
               </li>
               <li>
                 <a href="#services" class="inline-block text-base hover:text-primary mb-3">My Services</a>
@@ -464,7 +642,7 @@
     <!-- Footer End -->
 
     <!-- Back To Top Start -->
-    <a href="#home" class="justify-center items-center fixed z-40 bottom-5 right-5 h-12 w-12 md:h-14 md:w-14 rounded-full bg-primary hover:animate-pulse hidden" id="to-top"
+    <a href="#home" class="justify-center items-center fixed z-40 bottom-5 right-5 h-12 w-12 md:h-14 md:w-14 rounded-full border-solid border-thrid border bg-primary hover:animate-pulse hidden" id="to-top"
       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
         <line x1="12" y1="19" x2="12" y2="5"></line>
         <polyline points="5 12 12 5 19 12"></polyline></svg

@@ -8,9 +8,23 @@ hamburger.addEventListener("click", function () {
 });
 
 window.addEventListener("click", function (e) {
-  if (e.target != hamburger && e.target != navMenu) {
+  if (e.target != hamburger && e.target != navMenu && e.target != dropBtn) {
     hamburger.classList.remove("hamburger-active");
     navMenu.classList.remove("active");
+  }
+});
+
+// DropDown Menu
+const dropBtn = document.querySelector("#dropBtn");
+const dropMenu = document.querySelector("#dropMenu");
+
+dropBtn.addEventListener("click", function () {
+  dropMenu.classList.toggle("hidden");
+});
+
+window.addEventListener("click", function (e) {
+  if (e.target != dropBtn && e.target != dropMenu) {
+    dropMenu.classList.add("hidden");
   }
 });
 
