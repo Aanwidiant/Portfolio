@@ -9,17 +9,17 @@
 
   <body>
     <!-- Header start -->
-    <header class="bg-primary top-0 left-0 w-full flex items-center fixed z-10 shadow-sm shadow-secondry">
+    <header class="fixed top-0 left-0 z-10 flex items-center w-full shadow-sm bg-primary shadow-secondry">
       <div class="container">
         <div class="flex items-center justify-between w-full">
           <div class="px-4">
-            <a href="#home" class="font-bold text-3xl italic text-dark block py-6">Aan <span class="text-white">Widianto</span></a>
+            <a href="#home" class="block py-6 text-3xl italic font-bold text-dark">Aan <span class="text-white">Widianto</span></a>
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden mx-4 z-10">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            <button id="hamburger" name="hamburger" type="button" class="absolute z-10 block mx-4 right-4 lg:hidden">
+              <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
             </button>
 
             <nav
@@ -28,14 +28,14 @@
             >
               <ul id="nav-list" class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">Home</a>
+                  <a href="#home" class="flex py-2 mx-6 text-xl text-dark group-hover:text-white">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">About Me</a>
+                  <a href="#about" class="flex py-2 mx-6 text-xl text-dark group-hover:text-white">About Me</a>
                 </li>
                 <li class="group">
                   <div class="relative">
-                    <button id="dropBtn" class="text-xl text-dark py-2 ml-6 mr-2 flex group-hover:text-white">
+                    <button id="dropBtn" class="flex py-2 ml-6 mr-2 text-xl text-dark group-hover:text-white">
                       Experience
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -47,32 +47,32 @@
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="feather feather-chevron-down self-center mx-2"
+                        class="self-center mx-2 feather feather-chevron-down"
                       >
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </button>
 
-                    <div id="dropMenu" class="lg:absolute lg:mt-6 bg-thrid rounded-md mx-2 py-2 lg:bg-primary hidden lg:w-44">
+                    <div id="dropMenu" class="hidden py-2 mx-2 rounded-md lg:absolute lg:mt-6 bg-thrid lg:bg-primary lg:w-44">
                       <ul>
                         <li class="group">
-                          <a href="#journey" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Journey</a>
+                          <a href="#journey" class="flex py-2 mx-6 text-xl text-dark hover:text-primary lg:hover:text-white">My Journey</a>
                         </li>
                         <li class="group">
-                          <a href="#services" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Services</a>
+                          <a href="#services" class="flex py-2 mx-6 text-xl text-dark hover:text-primary lg:hover:text-white">My Services</a>
                         </li>
                         <li class="group">
-                          <a href="#skill" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Skill</a>
+                          <a href="#skill" class="flex py-2 mx-6 text-xl text-dark hover:text-primary lg:hover:text-white">My Skill</a>
                         </li>
                         <li class="group">
-                          <a href="#portfolio" class="text-xl text-dark py-2 mx-6 flex hover:text-primary lg:hover:text-white">My Portfolio</a>
+                          <a href="#portfolio" class="flex py-2 mx-6 text-xl text-dark hover:text-primary lg:hover:text-white">My Portfolio</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-xl text-dark py-2 mx-6 flex group-hover:text-white">Contact</a>
+                  <a href="#contact" class="flex py-2 mx-6 text-xl text-dark group-hover:text-white">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -83,22 +83,22 @@
     <!-- Header end -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-32 f pb-32 lg:pb-0 flex lg:h-screen lg:items-center">
+    <section id="home" class="flex pt-32 pb-32 f lg:pb-0 lg:h-screen lg:items-center">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div class="self-center w-full px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-dark md:text-2xl md:mb-4">
-              Halo semua, saya <span class="block font-bold text-primary text-4xl lg:text-5xl">Aan <span class="text-dark">Widianto</span></span>
+              Halo semua, saya <span class="block text-4xl font-bold text-primary lg:text-5xl">Aan <span class="text-dark">Widianto</span></span>
             </h1>
-            <h2 class="font-medium text-dark text-lg mb-5 lg:text-2xl">Mahasiswa & Web Developer</h2>
-            <p class="font-medium text-secondry lg:text-lg mb-10 leading-relaxed">
-              Saya adalah mahasiswa teknik informatika yang tertarik dan mendalami pengembangan website. Tertarik dibuatkan website, <span class="text-dark font-bold">klik dibawah ini!</span>
+            <h2 class="mb-5 text-lg font-medium text-dark lg:text-2xl">Mahasiswa & Web Developer</h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondry lg:text-lg">
+              Saya adalah mahasiswa teknik informatika yang tertarik dan mendalami pengembangan website. Tertarik dibuatkan website, <span class="font-bold text-dark">klik dibawah ini!</span>
             </p>
-            <a href="#contact" class="text-base font-semibold text-thrid bg-primary py-3 px-8 rounded-2xl hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+            <a href="#contact" class="px-8 py-3 text-base font-semibold transition duration-300 ease-in-out text-thrid bg-primary rounded-2xl hover:shadow-lg hover:opacity-80">Hubungi Saya</a>
           </div>
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div class="self-center w-full px-4 lg:w-1/2">
             <div class="mx-auto mt-10 lg:mt-0 lg:right-0">
-              <svg class="svgBolb mx-auto scale-90 md:scale-125" width="400" height="400" viewBox="0 0 280 318" xmlns="http://www.w3.org/2000/svg">
+              <svg class="mx-auto scale-90 svgBolb md:scale-125" width="400" height="400" viewBox="0 0 280 318" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <clipPath id="heroClip" class="translate-y-8">
                     <path d="M0 170.318 V0 L280 0 V297.564 C280 312.96 263.333 322.583 250 314.885 L10 176.321Z" />
@@ -106,7 +106,7 @@
                 </defs>
                 <rect width="280" height="318" fill="none" />
                 <path d="M10 176.321C-3.33333 168.623 -3.33334 149.378 10 141.679L250 3.11545C263.333 -4.58258 280 5.03992 280 20.4359V297.564C280 312.96 263.333 322.583 250 314.885L10 176.321Z" clip-path="url(#blobClip)" fill="#0ea5e9" />
-                <image class="home_image w-72 -translate-y-8" id="imageBlob" href="img/me.png" clip-path="url(#heroClip)"></image>
+                <image class="-translate-y-8 home_image w-72" id="imageBlob" href="img/me.png" clip-path="url(#heroClip)"></image>
               </svg>
             </div>
           </div>
@@ -119,22 +119,22 @@
     <section id="about" class="pt-32 pb-32 bg-slate-100">
       <div class="container">
         <div class="flex flex-wrap">
-          <h2 class="w-full font-bold text-dark text-3xl mb-6 lg:text-4xl text-center">About <span class="text-primary">Me</span></h2>
+          <h2 class="w-full mb-6 text-3xl font-bold text-center text-dark lg:text-4xl">About <span class="text-primary">Me</span></h2>
           <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold text-dark text-xl mb-5 lg:text-2xl">Selamat datang, perkenalkan saya Aan Widianto.</h4>
-            <p class="font-medium text-base text-secondry lg:text-lg">
+            <h4 class="mb-5 text-xl font-bold text-dark lg:text-2xl">Selamat datang, perkenalkan saya Aan Widianto.</h4>
+            <p class="text-base font-medium text-secondry lg:text-lg">
               Saat ini, saya masih menjalani pendidikan sebagai mahasiswa kelas karyawan di Universitas Mercu Buana Yogyakarta, dalam program studi Teknik Informatika. Minat saya dalam pengembangan website mendorong saya untuk terus
               memperdalam pengetahuan dan keterampilan saya, meskipun saat ini saya menyadari bahwa pengalaman dan pengetahuan saya dalam web development masih terbatas karena latar belakang pendidikan saya sebelumnya tidak sepenuhnya
               sesuai. Namun, saya bertekad untuk terus belajar dan berusaha agar suatu hari nanti dapat bekerja sebagai web developer.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h4 class="font-bold text-dark text-2xl mb-5 lg:text-2xl">Visi saya.</h4>
-            <p class="font-medium text-base text-secondry mb-5 lg:text-lg">Menjadi seorang web developer yang handal dan berpengalaman, mampu menciptakan solusi web inovatif yang memberikan dampak positif bagi pengguna dan industri.</p>
-            <p class="font-medium text-base text-secondry mb-3 lg:text-lg">Ikuti saya di media sosial.</p>
+            <h4 class="mb-5 text-2xl font-bold text-dark lg:text-2xl">Visi saya.</h4>
+            <p class="mb-5 text-base font-medium text-secondry lg:text-lg">Menjadi seorang web developer yang handal dan berpengalaman, mampu menciptakan solusi web inovatif yang memberikan dampak positif bagi pengguna dan industri.</p>
+            <p class="mb-3 text-base font-medium text-secondry lg:text-lg">Ikuti saya di media sosial.</p>
             <div class="flex items-center">
               <!-- Github  -->
-              <a href="https://github.com/Aanwidiant" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://github.com/Aanwidiant" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -142,7 +142,7 @@
                   /></svg
               ></a>
               <!-- Linked in -->
-              <a href="https://id.linkedin.com/in/aan-widianto-102042240" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://id.linkedin.com/in/aan-widianto-102042240" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
@@ -150,7 +150,7 @@
                   /></svg
               ></a>
               <!-- Instagram -->
-              <a href="https://www.instagram.com/aanwidiant/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://www.instagram.com/aanwidiant/" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -158,7 +158,7 @@
                   /></svg
               ></a>
               <!-- Facebook -->
-              <a href="https://web.facebook.com/aan.xondanx/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://web.facebook.com/aan.xondanx/" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path
@@ -166,7 +166,7 @@
                   /></svg
               ></a>
               <!-- X -->
-              <a href="https://twitter.com/Aanwidianto4/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://twitter.com/Aanwidianto4/" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>X</title>
                   <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg
@@ -182,139 +182,139 @@
     <section id="journey" class="pt-32 pb-32">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-6">
-            <h2 class="w-full font-bold text-dark text-3xl mb-6 lg:text-4xl text-center">My <span class="text-primary">Journey</span></h2>
+          <div class="max-w-xl mx-auto mb-6 text-center">
+            <h2 class="w-full mb-6 text-3xl font-bold text-center text-dark lg:text-4xl">My <span class="text-primary">Journey</span></h2>
             <p class="font-medium text-md text-secondry md:text-lg">Berikut ini merupakan riwayat pendidikan dan perkerjaan saya.</p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
-            <div class="flex flex-col md:grid grid-cols-9 mx-auto px-4 text-thrid">
+            <div class="flex flex-col grid-cols-9 px-4 mx-auto md:grid text-thrid">
               <!-- Kiri -->
               <div class="flex flex-row-reverse md:contents">
-                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                <div class="w-full col-start-1 col-end-5 p-4 my-2 ml-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>14 Februari 2000</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">Lahir</h3>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">Lahir</h3>
                 </div>
-                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
-                  <div class="h-full w-4 flex items-end justify-center">
-                    <div class="h-1/2 w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-end justify-center w-4 h-full">
+                    <div class="w-1 h-1/2 bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
               </div>
               <!-- kanan -->
               <div class="flex md:contents">
-                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
-                  <div class="h-full w-4 flex items-center justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-center justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
-                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                <div class="w-full col-start-6 col-end-10 p-4 my-2 mr-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2006 - 2007</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">TK PGRI Jatimulyo</h3>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">TK PGRI Jatimulyo</h3>
                 </div>
               </div>
               <!-- kiri -->
               <div class="flex flex-row-reverse md:contents">
-                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                <div class="w-full col-start-1 col-end-5 p-4 my-2 ml-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2007 - 2012</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">SD N 2 Jonggrangan</h3>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">SD N 2 Jonggrangan</h3>
                 </div>
-                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
-                  <div class="h-full w-4 flex items-end justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-end justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
               </div>
               <!-- kanan -->
               <div class="flex md:contents">
-                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
-                  <div class="h-full w-4 flex items-center justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-center justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
-                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                <div class="w-full col-start-6 col-end-10 p-4 my-2 mr-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2013 - 2015</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">SMP N 3 Pengasih</h3>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">SMP N 3 Pengasih</h3>
                 </div>
               </div>
               <!-- kiri -->
               <div class="flex flex-row-reverse md:contents">
-                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                <div class="w-full col-start-1 col-end-5 p-4 my-2 ml-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2016 - 2018</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">SMK N 2 Pengasih</h3>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">SMK N 2 Pengasih</h3>
                 </div>
-                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
-                  <div class="h-full w-4 flex items-end justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-end justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="w-full px-4 lg:w-1/2">
-            <div class="flex flex-col md:grid grid-cols-9 mx-auto px-4 text-thrid">
+            <div class="flex flex-col grid-cols-9 px-4 mx-auto md:grid text-thrid">
               <!-- kiri -->
               <div class="flex flex-row-reverse md:contents">
-                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                <div class="w-full col-start-1 col-end-5 p-4 my-2 ml-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2018 - 2020</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">PT Denso Indonesia</h3>
-                  <p class="text-sm md:text-base italic">Karyawan : Operator Produksi</p>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">PT Denso Indonesia</h3>
+                  <p class="text-sm italic md:text-base">Karyawan : Operator Produksi</p>
                 </div>
-                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
-                  <div class="h-full w-4 flex items-center justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-center justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
               </div>
               <!-- kanan -->
               <div class="flex md:contents">
-                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
-                  <div class="h-full w-4 flex items-center justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-center justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
-                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                <div class="w-full col-start-6 col-end-10 p-4 my-2 mr-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2021 - 2022</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">PT Denso Indonesia</h3>
-                  <p class="text-sm md:text-base italic">Karyawan : Operator Produksi</p>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">PT Denso Indonesia</h3>
+                  <p class="text-sm italic md:text-base">Karyawan : Operator Produksi</p>
                 </div>
               </div>
               <!-- kiri -->
               <div class="flex flex-row-reverse md:contents">
-                <div class="bg-primary col-start-1 col-end-5 p-4 rounded-xl ml-auto my-2 md:my-0 shadow-md w-full">
+                <div class="w-full col-start-1 col-end-5 p-4 my-2 ml-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2022 - Sekarang</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">Sukses Mandiri Al-Ka</h3>
-                  <p class="text-sm md:text-base italic">Karyawan : Tukang</p>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">Sukses Mandiri Al-Ka</h3>
+                  <p class="text-sm italic md:text-base">Karyawan : Tukang</p>
                 </div>
-                <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
-                  <div class="h-full w-4 flex items-end justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-end justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
               </div>
               <!-- kanan -->
               <div class="flex md:contents">
-                <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
-                  <div class="h-full w-4 flex items-center justify-center">
-                    <div class="h-full w-1 bg-dark"></div>
+                <div class="relative col-start-5 col-end-6 mr-8 md:mx-auto">
+                  <div class="flex items-center justify-center w-4 h-full">
+                    <div class="w-1 h-full bg-dark"></div>
                   </div>
-                  <div class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-dark shadow"></div>
+                  <div class="absolute w-4 h-4 -mt-3 rounded-full shadow top-1/2 bg-dark"></div>
                 </div>
-                <div class="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-2 md:my-0 mr-auto shadow-md w-full">
+                <div class="w-full col-start-6 col-end-10 p-4 my-2 mr-auto shadow-md bg-primary rounded-xl md:my-0">
                   <p>2022 - Sekarang</p>
-                  <h3 class="font-semibold text-md md:text-lg mt-1">UMBY</h3>
-                  <p class="text-sm md:text-base italic">Mahasiswa Kelas Karyawan</p>
+                  <h3 class="mt-1 font-semibold text-md md:text-lg">UMBY</h3>
+                  <p class="text-sm italic md:text-base">Mahasiswa Kelas Karyawan</p>
                 </div>
               </div>
             </div>
@@ -328,41 +328,41 @@
     <section id="services" class="pt-32 pb-32 bg-slate-100">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-6">
-            <h2 class="w-full font-bold text-dark text-3xl mb-6 lg:text-4xl text-center">My <span class="text-primary">Services</span></h2>
-            <p class="font-medium text-base text-secondry md:text-lg">Berikut ini adalah layanan yang saya tawarkan untuk membantu anda.</p>
+          <div class="max-w-xl mx-auto mb-6 text-center">
+            <h2 class="w-full mb-6 text-3xl font-bold text-center text-dark lg:text-4xl">My <span class="text-primary">Services</span></h2>
+            <p class="text-base font-medium text-secondry md:text-lg">Berikut ini adalah layanan yang saya tawarkan untuk membantu anda.</p>
           </div>
         </div>
 
         <div class="flex flex-wrap justify-around">
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
+            <div class="mb-6 overflow-hidden bg-white shadow-lg rounded-xl">
               <img src="img/service/web_design.svg" alt="Web design" class="w-2/3 mx-auto mt-2" />
-              <div class="py-6 px-6">
-                <h3 class="mb-3 font-semibold text-xl text-dark">Website Design</h3>
-                <p class="font-md text-base text-secondry">
+              <div class="px-6 py-6">
+                <h3 class="mb-3 text-xl font-semibold text-dark">Website Design</h3>
+                <p class="text-base font-md text-secondry">
                   Merancang tampilan visual sebuah situs web agar menarik dan mudah dipahami oleh pengguna. Ini melibatkan pemilihan warna, layout, dan elemen desain untuk menciptakan pengalaman pengguna yang baik.
                 </p>
               </div>
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
+            <div class="mb-6 overflow-hidden bg-white shadow-lg rounded-xl">
               <img src="img/service/web_development.svg" alt="Web development" class="w-2/3 mx-auto mt-2" />
-              <div class="py-6 px-6">
-                <h3 class="mb-3 font-semibold text-xl text-dark">Website Development</h3>
-                <p class="font-md text-base text-secondry">
+              <div class="px-6 py-6">
+                <h3 class="mb-3 text-xl font-semibold text-dark">Website Development</h3>
+                <p class="text-base font-md text-secondry">
                   Menciptakan situs web dengan membangun fungsi-fungsi interaktif dan pengaturan teknis. Ini meliputi pengembangan dari front-end dan back-end untuk menciptakan situs web yang responsif dan fungsional.
                 </p>
               </div>
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
+            <div class="mb-6 overflow-hidden bg-white shadow-lg rounded-xl">
               <img src="img/service/web_consultation.svg" alt="Web consultation" class="w-2/3 mx-auto mt-2" />
-              <div class="py-6 px-6">
-                <h3 class="mb-3 font-semibold text-xl text-dark">Website Consultation</h3>
-                <p class="font-md text-base text-secondry">
+              <div class="px-6 py-6">
+                <h3 class="mb-3 text-xl font-semibold text-dark">Website Consultation</h3>
+                <p class="text-base font-md text-secondry">
                   Memberikan saran dan panduan tentang strategi, desain, dan pengembangan situs web. Melibatkan analisis kebutuhan, identifikasi masalah, dan memberikan rekomendasi untuk meningkatkan kinerja dan efektivitas situs web.
                 </p>
               </div>
@@ -377,50 +377,58 @@
     <section id="skill" class="pt-32 pb-32 bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
-          <div class="mx-auto text-center mb-6">
-            <h2 class="w-full font-bold text-thrid text-3xl mb-6 lg:text-4xl text-center">My <span class="text-primary">Skill</span></h2>
+          <div class="mx-auto mb-6 text-center">
+            <h2 class="w-full mb-6 text-3xl font-bold text-center text-thrid lg:text-4xl">My <span class="text-primary">Skill</span></h2>
             <p class="font-medium text-md text-thrid md:text-lg">Berikut ini adalah teknologi yang saya telah saya pelajari dan gunakan.</p>
           </div>
         </div>
 
-        <div class="w-2/3 mx-auto px-4">
+        <div class="w-2/3 px-4 mx-auto">
           <div class="flex flex-wrap items-center justify-center">
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/html5.svg" width="80px" alt="HTML5" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">HTML 5</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">HTML 5</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/css3.svg" width="80px" alt="CSS3" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">CSS 3</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">CSS 3</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/javascript.svg" width="80px" alt="Java Script" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">Java Script</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">Java Script</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/php.svg" width="80px" alt="PHP" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">PHP</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">PHP</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+              <img src="img/skill/codeigniter.svg" width="80px" alt="Code Igniter" />
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">Code Igniter</p>
+            </div>
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/mysql.svg" width="80px" alt="MySQL" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">MySQL</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">MySQL</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+              <img src="img/skill/mongodb.svg" width="80px" alt="MongoDB" />
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">MongoDB</p>
+            </div>
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/bootstrap.svg" width="80px" alt="Bootstrap" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">Bootstrap</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">Bootstrap</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/tailwindcss.svg" width="80px" alt="Tailwind CSS" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">Tailwind CSS</p>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">Tailwind CSS</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
-              <img src="img/skill/nodedotjs.svg" width="80px" alt="Node JS" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">Node JS</p>
+            <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+              <img src="img/skill/nodejs.svg" width="80px" alt="Node JS" />
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">Node JS</p>
             </div>
-            <div href="#" class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
+            <!-- <div class="max-w-[120px] mx-4 py-10 lg:mx-6 xl:mx-8">
               <img src="img/skill/react.svg" width="80px" alt="React" />
-              <p class="py-4 text-center font-medium text-md text-white md:text-lg">React</p>
-            </div>
+              <p class="py-4 font-medium text-center text-white text-md md:text-lg">React</p>
+            </div> -->
           </div>
         </div>
       </div>
@@ -431,40 +439,40 @@
     <section id="portfolio" class="pt-32 pb-16 bg-slate-100">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-6">
-            <h2 class="w-full font-bold text-dark text-3xl mb-6 lg:text-4xl text-center">My <span class="text-primary">Portfolio</span></h2>
+          <div class="max-w-xl mx-auto mb-6 text-center">
+            <h2 class="w-full mb-6 text-3xl font-bold text-center text-dark lg:text-4xl">My <span class="text-primary">Portfolio</span></h2>
             <p class="font-medium text-md text-secondry md:text-lg">Berikut ini adalah beberapa project yang telah saya kerjakan.</p>
           </div>
         </div>
 
-        <div class="w-full px-4 flex flex-wrap justify-around">
-          <div class="mb-6 p-4 md:w-2/5 rounded-lg shadow-xl bg-white">
-            <div class="rounded-lg overflow-hidden">
+        <div class="flex flex-wrap justify-around w-full px-4">
+          <div class="p-4 mb-6 bg-white rounded-lg shadow-xl md:w-2/5">
+            <div class="overflow-hidden rounded-lg">
               <img src="img/projects/1.png" alt="Landing Page" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Portfolio UMKM</h3>
-            <p class="font-medium text-base text-secondry">(<strong class="italic">Dummy project</strong>) Portofolio Usaha Mikro Kecil dan Menengah Suroso Group.</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Portfolio UMKM</h3>
+            <p class="text-base font-medium text-secondry">(<strong class="italic">Dummy project</strong>) Portofolio Usaha Mikro Kecil dan Menengah Suroso Group.</p>
           </div>
-          <div class="mb-6 p-4 md:w-2/5 rounded-lg shadow-xl bg-white">
-            <div class="rounded-lg overflow-hidden">
+          <div class="p-4 mb-6 bg-white rounded-lg shadow-xl md:w-2/5">
+            <div class="overflow-hidden rounded-lg">
               <img src="img/projects/2.png" alt="Landing Page" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Undangan Pernikahan</h3>
-            <p class="font-medium text-base text-secondry">(<strong class="italic">Dummy project</strong>) Website undangan pernikahan dengan Bootstrap.</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Undangan Pernikahan</h3>
+            <p class="text-base font-medium text-secondry">(<strong class="italic">Dummy project</strong>) Website undangan pernikahan dengan Bootstrap.</p>
           </div>
-          <div class="mb-6 p-4 md:w-2/5 rounded-lg shadow-xl bg-white">
-            <div class="rounded-lg overflow-hidden">
+          <div class="p-4 mb-6 bg-white rounded-lg shadow-xl md:w-2/5">
+            <div class="overflow-hidden rounded-lg">
               <img src="img/projects/3.png" alt="Landing Page" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website Karang Taruna</h3>
-            <p class="font-medium text-base text-secondry">(<strong class="italic">Dummy project</strong>) Website portfolio dari Karang Taruna PERMATA (Persatuan Remaja Talunombo).</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Website Karang Taruna</h3>
+            <p class="text-base font-medium text-secondry">(<strong class="italic">Dummy project</strong>) Website portfolio dari Karang Taruna PERMATA (Persatuan Remaja Talunombo).</p>
           </div>
-          <div class="mb-6 p-4 md:w-2/5 rounded-lg shadow-xl bg-white">
-            <div class="rounded-lg overflow-hidden">
+          <div class="p-4 mb-6 bg-white rounded-lg shadow-xl md:w-2/5">
+            <div class="overflow-hidden rounded-lg">
               <img src="img/projects/4.png" alt="Landing Page" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Portofolio Sukses Mandiri Al-Ka</h3>
-            <p class="font-medium text-base text-secondry">(<strong class="italic">Dummy project</strong>) Portofolio Usaha Sukses Mandiri Alumunium dan Kaca.</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">Portofolio Sukses Mandiri Al-Ka</h3>
+            <p class="text-base font-medium text-secondry">(<strong class="italic">Dummy project</strong>) Portofolio Usaha Sukses Mandiri Alumunium dan Kaca.</p>
           </div>
         </div>
       </div>
@@ -475,15 +483,15 @@
     <section id="contact" class="pt-32 pb-32">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-6">
-            <h2 class="w-full font-bold text-primary text-3xl mb-6 lg:text-4xl text-center">Contact</h2>
+          <div class="max-w-xl mx-auto mb-6 text-center">
+            <h2 class="w-full mb-6 text-3xl font-bold text-center text-primary lg:text-4xl">Contact</h2>
             <p class="font-medium text-md text-secondry md:text-lg">Hubungi saya melalui form berikut ini.</p>
           </div>
         </div>
 
         <form name="contact-form">
-          <div class="w-4/5 md:w-2/3 lg:w-1/3 font-semibold text-thrid bg-emerald-500 py-3 px-4 rounded-xl mb-8 my-alert mx-auto hidden" role="alert">
-            <div class="flex items-center justify-around px-4 w-full">
+          <div class="hidden w-4/5 px-4 py-3 mx-auto mb-8 font-semibold md:w-2/3 lg:w-1/3 text-thrid bg-emerald-500 rounded-xl my-alert" role="alert">
+            <div class="flex items-center justify-around w-full px-4">
               <div class="mx-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square">
                   <polyline points="9 11 12 14 22 4"></polyline>
@@ -506,24 +514,24 @@
               </div>
             </div>
           </div>
-          <div class="w-full lg:w-2/3 lg:m-auto bg-slate-50 rounded-xl shadow-lg py-4">
+          <div class="w-full py-4 shadow-lg lg:w-2/3 lg:m-auto bg-slate-50 rounded-xl">
             <div class="w-full px-4 mb-8">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
-              <input type="text" id="name" name="nama" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required />
+              <input type="text" id="name" name="nama" class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required />
             </div>
             <div class="w-full px-4 mb-8">
               <label for="email" class="text-base font-bold text-primary">Email</label>
-              <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required />
+              <input type="email" id="email" name="email" class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required />
             </div>
             <div class="w-full px-4 mb-8">
               <label for="message" class="text-base font-bold text-primary">Pesan</label>
-              <textarea type="text-area" id="message" name="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" required> </textarea>
+              <textarea type="text-area" id="message" name="pesan" class="w-full h-32 p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required> </textarea>
             </div>
             <div class="w-full px-4">
-              <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-2xl w-48 hover:opacity-80 hover:shadow-lg transition duration-500 btn-kirim">Kirim</button>
+              <button class="w-48 px-8 py-3 text-base font-semibold text-white transition duration-500 bg-primary rounded-2xl hover:opacity-80 hover:shadow-lg btn-kirim">Kirim</button>
             </div>
             <div class="w-full px-4">
-              <button class="justify-center text-base font-semibold text-white bg-primary py-3 px-8 rounded-2xl w-48 btn-loading hidden">
+              <button class="justify-center hidden w-48 px-8 py-3 text-base font-semibold text-white bg-primary rounded-2xl btn-loading">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -534,7 +542,7 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-loader animate-spin items-center mr-3 inline-block"
+                  class="items-center inline-block mr-3 feather feather-loader animate-spin"
                 >
                   <line x1="12" y1="2" x2="12" y2="6"></line>
                   <line x1="12" y1="18" x2="12" y2="22"></line>
@@ -554,21 +562,21 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-12">
+    <footer class="pt-24 pb-12 bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-3xl text-thrid mb-5 italic"><span class="text-primary">Aan</span> Widianto</h2>
-            <h3 class="font-bold text-xl mb-2">Hubungi Saya</h3>
+          <div class="w-full px-4 mb-10 font-medium text-slate-300 md:w-1/3">
+            <h2 class="mb-5 text-3xl italic font-bold text-thrid"><span class="text-primary">Aan</span> Widianto</h2>
+            <h3 class="mb-2 text-xl font-bold">Hubungi Saya</h3>
             <p>aanwidianto01@gmail.com</p>
             <p>Talunombo, Sidomulyo, Pengasih, Kulon Progo</p>
             <p>Yogyakarta</p>
           </div>
           <div class="w-full px-4 mb-10 md:w-1/3">
-            <h3 class="font-semibold text-xl text-thrid mb-5">Ikuti Saya</h3>
+            <h3 class="mb-5 text-xl font-semibold text-thrid">Ikuti Saya</h3>
             <div class="flex items-center mb-5 text-slate-300">
               <!-- Github  -->
-              <a href="https://github.com/Aanwidiant" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://github.com/Aanwidiant" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -576,7 +584,7 @@
                   /></svg
               ></a>
               <!-- Linked in -->
-              <a href="https://id.linkedin.com/in/aan-widianto-102042240" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://id.linkedin.com/in/aan-widianto-102042240" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
@@ -584,7 +592,7 @@
                   /></svg
               ></a>
               <!-- Instagram -->
-              <a href="https://www.instagram.com/aanwidiant/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://www.instagram.com/aanwidiant/" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -592,7 +600,7 @@
                   /></svg
               ></a>
               <!-- Facebook -->
-              <a href="https://web.facebook.com/aan.xondanx/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://web.facebook.com/aan.xondanx/" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path
@@ -600,7 +608,7 @@
                   /></svg
               ></a>
               <!-- X -->
-              <a href="https://twitter.com/Aanwidianto4/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              <a href="https://twitter.com/Aanwidianto4/" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 ><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>X</title>
                   <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg
@@ -608,41 +616,41 @@
             </div>
           </div>
           <div class="w-full px-4 mb-10 md:w-1/3">
-            <h3 class="font-semibold text-xl text-thrid mb-5">Tautan Menu</h3>
+            <h3 class="mb-5 text-xl font-semibold text-thrid">Tautan Menu</h3>
             <ul class="text-slate-300">
               <li>
-                <a href="#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
+                <a href="#home" class="inline-block mb-3 text-base hover:text-primary">Home</a>
               </li>
               <li>
-                <a href="#about" class="inline-block text-base hover:text-primary mb-3">About Me</a>
+                <a href="#about" class="inline-block mb-3 text-base hover:text-primary">About Me</a>
               </li>
               <li>
-                <a href="#journey" class="inline-block text-base hover:text-primary mb-3">My Journey</a>
+                <a href="#journey" class="inline-block mb-3 text-base hover:text-primary">My Journey</a>
               </li>
               <li>
-                <a href="#services" class="inline-block text-base hover:text-primary mb-3">My Services</a>
+                <a href="#services" class="inline-block mb-3 text-base hover:text-primary">My Services</a>
               </li>
               <li>
-                <a href="#skill" class="inline-block text-base hover:text-primary mb-3">My Skill</a>
+                <a href="#skill" class="inline-block mb-3 text-base hover:text-primary">My Skill</a>
               </li>
               <li>
-                <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">My Portfolio</a>
+                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">My Portfolio</a>
               </li>
               <li>
-                <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                <a href="#contact" class="inline-block mb-3 text-base hover:text-primary">Contact</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="w-full pt-10 border-t border-slate-700">
-          <p class="font-medium text-xs text-slate-500 text-center">Copyright &#169; 2024 All rights reserved | created by <a href="https://github.com/Aanwidiant" target="_blank" class="font-bold text-primary">Aan Widianto</a></p>
+          <p class="text-xs font-medium text-center text-slate-500">Copyright &#169; 2024 All rights reserved | created by <a href="https://github.com/Aanwidiant" target="_blank" class="font-bold text-primary">Aan Widianto</a></p>
         </div>
       </div>
     </footer>
     <!-- Footer End -->
 
     <!-- Back To Top Start -->
-    <a href="#home" class="justify-center items-center fixed z-40 bottom-5 right-5 h-12 w-12 md:h-14 md:w-14 rounded-full border-solid border-thrid border bg-primary hover:animate-pulse hidden" id="to-top"
+    <a href="#home" class="fixed z-40 items-center justify-center hidden w-12 h-12 border border-solid rounded-full bottom-5 right-5 md:h-14 md:w-14 border-thrid bg-primary hover:animate-pulse" id="to-top"
       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
         <line x1="12" y1="19" x2="12" y2="5"></line>
         <polyline points="5 12 12 5 19 12"></polyline></svg
