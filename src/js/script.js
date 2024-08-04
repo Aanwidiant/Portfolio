@@ -76,3 +76,29 @@ function scrollFunction() {
     toTop.classList.add("hidden");
   }
 }
+
+// Modal box detail project
+const closeDetails = document.querySelectorAll(".closeDetail");
+const details = document.querySelectorAll(".detail");
+
+closeDetails.forEach(function (closeDetail) {
+  closeDetail.addEventListener("click", function () {
+    const targetId = closeDetail.getAttribute("data-target");
+    const detailProject = document.getElementById(targetId);
+    if (detailProject) {
+      detailProject.classList.add("hidden");
+      detailProject.classList.remove("flex");
+    }
+  });
+});
+
+details.forEach((detail) => {
+  detail.addEventListener("click", function () {
+    const targetId = detail.getAttribute("data-target");
+    const detailProject = document.getElementById(targetId);
+    if (detailProject) {
+      detailProject.classList.add("flex");
+      detailProject.classList.remove("hidden");
+    }
+  });
+});
